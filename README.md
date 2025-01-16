@@ -1,2 +1,2 @@
-# intune_scripts
+# Intune
 Intune scripts and tips.
