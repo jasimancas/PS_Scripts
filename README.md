@@ -1,2 +1,2 @@
-# Intune
-Intune scripts and tips.
+# PowerShell Scripts
+PowerShell script to Intune, EntraID, MDATP, etc.
