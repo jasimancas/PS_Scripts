@@ -5,6 +5,7 @@
 $UninstallPackages = @(
     "AD2F1837.HPDesktopSupportUtilities"
     "AD2F1837.HPEasyClean"
+    "AD2F1837.HPInc.EnergyStar"
     "AD2F1837.HPJumpStarts"
     "AD2F1837.HPPCHardwareDiagnosticsWindows"
     "AD2F1837.HPPowerManager"
