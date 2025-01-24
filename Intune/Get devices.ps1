@@ -1,11 +1,8 @@
 # Import the module
 Import-Module Microsoft.Graph
 
-# Authenticate to Microsoft Graph and Azure AD
-Connect-MgGraph
-
 # Authenticate to Microsoft Graph
-Connect-MgGraph -Scopes "DeviceManagementManagedDevices.Read.All", "Device.Read.All"
+Connect-MgGraph
 
 # Get all devices enrolled in Intune
 $intuneDevices = Get-MgDeviceManagementManagedDevice
