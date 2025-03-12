@@ -23,11 +23,11 @@ $HPidentifier = "AD2F1837"
 
 # Get installed packages matching the list or identifier
 $InstalledPackages = Get-AppxPackage -AllUsers `
-    | Where-Object {($UninstallPackages -contains $_.Name) -or ($_.Name -match "^$HPidentifier")}
+    | Where-Object {($UninstallPackages -contains $_.Name)}
 
 # Get provisioned packages matching the list or identifier
 $ProvisionedPackages = Get-AppxProvisionedPackage -Online `
-    | Where-Object {($UninstallPackages -contains $_.DisplayName) -or ($_.DisplayName -match "^$HPidentifier")}
+    | Where-Object {($UninstallPackages -contains $_.DisplayName)}
 
 if (($InstalledPackages) -or ($ProvisionedPackages)) {
     # Apps detected, need to run removal script
